@@ -1,0 +1,95 @@
+/* The * selects everything and acts as a global reset to ensure consistency across browsers */
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    .white-text {
+        color:rgb(233, 243, 232)
+    }
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+/* Sets the overall background and ensures the content fits the screen height */
+html{
+    background-color: rgb(17, 42, 25); 
+}
+
+html, body {
+    height: 80vh; 
+    padding: 1rem; 
+}
+
+/* Defines the page layout using a grid */
+body {
+    display: grid; 
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"; 
+    grid-template-rows: auto 1fr auto; /* Adjusted to reflect the simplified structure */
+}
+
+main {
+    display: grid; 
+    grid-template-areas:
+        "portfolio map-container";
+    grid-template-columns: 1fr 1fr; 
+}
+
+/* Assigns each major section to a part of the grid */
+header { 
+    grid-area: header; 
+}
+
+main { 
+    grid-area: main; 
+}
+
+.portfolio {
+    grid-area: portfolio; 
+    background-color: rgb(86, 140, 96);
+    padding:40px;
+    overflow-y:scroll;
+    height: 85vh;
+}
+
+#map { 
+    grid-area: map; 
+    height: 80vh; 
+}
+
+#map-container {
+    grid-area: map-container;
+}
+
+#mapheader {
+    text-align:right;
+}
+
+a {
+    text-decoration:none;
+}
+
+a:hover {
+    background-color:pink;
+    transition:0.5s;
+    text-decoration-line: underline;
+}
+
+.btn {
+    background-color: #0f4833;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {opacity: 1}
+
+footer { 
+    grid-area: footer; 
+}

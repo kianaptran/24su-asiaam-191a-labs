@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kiana's Lab #1: Map and Profile</title>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="#">
+
+        <!-- I'd add some style if here if I had any -->
+        <link rel="stylesheet" href="styles/style.css">
+        <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet">
+        <!-- MapLibreGL's JavaScript-->
+        <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <h1><span class="white-text">Lab #1: Map and Portfolio</span></h1>
+        </header>
+
+        <main>
+            <!-- hint: majority of your lab assignment can go here -->
+            <div class="portfolio">
+                <!-- Portfolio content goes here -->
+                <img src="IMG_3234.jpg" alt="Discription of image 1" style="width: 300px; height: auto;">
+                <img src="IMG_3552.JPG" alt="Descriptionof image 2" style="width: 300px; height: auto;">
+                <p style="margin-bottom: 20px"> Hi Everyone!</p>
+                <p style="margin-bottom: 20px">I'm Kiana, a rising 4th-year majoring in Biology with a minor in Asian American Studies. If you couldn't already tell, I have a cat (his name is bubbas)! A new hobby that I recently started practicing is nail art, specifically GelX. I also love watching shows and movies, my most recent being Bridgerton and Young Sheldon.</p>
+                <p style="margin-bottom: 20px">My goals as a critical digital map maker is to create accurate maps that represent and target overlooked health issues. As a visual person, maps can be a useful tool to display issues in a digestible manner, making it accessible for most people!</p>
+                <p>Current Workout Split:</p>
+                <ol>
+                    <li>Chest, Shoulders, and Triceps </li>
+                    <li>Quads</li>
+                    <li>Back and Biceps</li>
+                    <li>Hamstrings</li>
+                    <li>Glutes</li>
+                  </ol>
+                <p style="margin-top: 20px;">Shows I Need to Watch:</p>
+                <ul>
+                    <li><a href="https://www.google.com/search?q=the+atypical+family&sca_esv=7a5a3d9da1a036d7&rlz=1C5CHFA_enUS968US969&sxsrf=ADLYWIIGvmTC4PdK7hyS3ehLpEzsajYXwg%3A1719689287887&ei=R2CAZvLtNcqZkPIPj4Su0Ag&ved=0ahUKEwiyrYPpxYGHAxXKDEQIHQ-CC4oQ4dUDCA8&uact=5&oq=the+atypical+family&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3RoZSBhdHlwaWNhbCBmYW1pbHkyChAjGIAEGCcYigUyDRAuGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgoQABiABBhDGIoFMgoQABiABBhDGIoFMhwQLhiABBixAxhDGIoFGJcFGNwEGN4EGOAE2AEDSLwOUIcIWO4JcAF4AZABAJgBbqAB5gKqAQMzLjG4AQPIAQD4AQGYAgOgAr8BwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAg8QLhiABBiwAxhDGIoFGArCAg4QABiwAxjkAhjWBNgBAcICExAuGIAEGLADGEMYyAMYigXYAQLCAgcQIxiwAhgnwgINEC4YgAQYsQMYgwEYDcICChAAGIAEGLEDGA3CAgcQABiABBgNwgIcEC4YgAQYsQMYgwEYDRiXBRjcBBjeBBjgBNgBA5gDAIgGAZAGE7oGBggBEAEYCboGBggCEAEYCLoGBggDEAEYFJIHAzIuMaAH5SU&sclient=gws-wiz-serp">The Atypical Family</a></li>
+                    <li><a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LEkpSU5OSzIyYPTizE0szlZIzyzKAQBsDwhJ&q=mask+girl&rlz=1C5CHFA_enUS968US969&oq=mask+girl&gs_lcrp=EgZjaHJvbWUqCggBEC4YsQMYgAQyBwgAEAAYjwIyCggBEC4YsQMYgAQyCggCEAAYsQMYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBggHEEUYPNIBCDI1MDFqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8">Mask Girl</a></li>
+                    <li><a href="https://www.google.com/search?q=the+bear&rlz=1C5CHFA_enUS968US969&oq=the+bear&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyEAgBEC4YgwEY1AIYsQMYgAQyEAgCEC4YgwEY1AIYsQMYgAQyDQgDEAAYgwEYsQMYgAQyDQgEEAAYgwEYsQMYgAQyDQgFEAAYgwEYsQMYgAQyBggGEEUYPDIGCAcQRRg80gEIMTEwOWowajmoAgCwAgA&sourceid=chrome&ie=UTF-8">The Bear</a>
+                </ul>
+                <a href="https://www.google.com"><div class="btn">Click Me!</div></a>
+            </div>
+            <div id="map-container">
+                <div id="mapheader">
+                    <h3 class="white-text">Places you can find me!</span></h3>
+                </div>
+                <div id="map">
+                    <!-- Map will be inserted here -->
+                </div>
+            </div>
+        </main>
+        <script src="js/init.js"></script>
+        <div id="footer">
+Copyright(2024)
+        </div>
+
+    </body>
+</html>
