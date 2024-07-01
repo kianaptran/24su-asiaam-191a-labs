@@ -90,6 +90,14 @@ a:hover {
   
   .btn:hover {opacity: 1}
 
-footer { 
-    grid-area: footer; 
+#footer { 
+    grid-area: footer;
+    padding: 1rem;
+    background-color: #83b099; /* Sets a darker background for contrast */
+    color: #265b43; /* Ensures text is readable against the dark background */
+    text-align: center; /* Centers the footer content */ 
+}
+
+.pink_background{
+    background-color: pink;
 }
