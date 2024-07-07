@@ -1,0 +1,137 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    .white-text {
+        color:#ffffec
+    }
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+html {
+    background-color: #6f4e37;
+}
+
+html, body {
+    height: 80vh;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "portfolio map";
+    grid-template-columns: 1fr 1fr;
+}
+
+header { 
+    grid-area: header;
+}
+
+main { 
+    grid-area: main;
+}
+
+.portfolio {
+    grid-area: portfolio;
+    display: flex; /* This will make the items inside the portfolio flex items */
+    flex-direction: column; /* This can be row if you want the items to be side by side */
+    justify-content: space-evenly; /* This can be flex-start, flex-end, space-between, space-around, space-evenly */
+    align-items: center; /* This can be flex-start, flex-end, stretch, baseline */
+    background-color: #dcb499;
+}
+
+#map { 
+    grid-area: map;
+    height: 80vh;
+}
+
+#footer {
+    grid-area: footer;
+    padding: 1rem;
+    background-color: #a47f66; /* Sets a darker background for contrast */
+    color: #fff; /* Ensures text is readable against the dark background */
+    text-align: center; /* Centers the footer content */
+}
+
+ul.custom-image-bullets {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+    margin-top:-15px;
+    }
+  
+  ul.custom-image-bullets li {
+    position: relative;
+    padding-left: 40px; /* Adjust padding to accommodate the image size */
+    }
+  
+  ul.custom-image-bullets li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Set the desired width */
+    height: 20px; /* Set the desired height */
+    background-image: url('../coffeebeans.png'); /* URL to your image */
+    background-size: contain; /* Make the image fit the size */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.coffeebutton {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #ffffec;
+  
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  margin:5px;
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+    border-radius: 5px;
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  background-color: #a47f66;
+}
+
+.coffeebutton:hover,
+.coffeebutton:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.coffeebutton:active {
+  background: var(--color);
+  color: #fff;
+}
+
+#portfoliopic {
+    width: 300px; 
+    height: auto;
+    border-radius: 50px;
+}
+
+.headers{
+    text-align:center;
+}
