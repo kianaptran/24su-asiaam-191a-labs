@@ -1,0 +1,76 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Myungrang Hotdog",
+          "message": "cashiered and served korean corndogs"
+        },
+        "geometry": {
+          "coordinates": [
+            -117.99698601725423,
+            33.8595087084081
+          ],
+          "type": "Point"
+        },
+        "id": 0
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Wok Express",
+          "message": "cashiered and served chinese fast food"
+        },
+        "geometry": {
+          "coordinates": [
+            -117.99486534924894,
+            33.80167801391694
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "MyOptics Optometry",
+          "message": "filing and secretarial work"
+        },
+        "geometry": {
+          "coordinates": [
+            -117.95972861616899,
+            33.74609280503918
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Astoria Modern Family Dental",
+          "message": "filing and secretarial work"
+        },
+        "geometry": {
+          "coordinates": [
+            -73.91843618731112,
+            40.75991975795867
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "UCLA Store",
+          "message": "customer service representative"
+        },
+        "geometry": {
+          "coordinates": [
+            -118.44449012993215,
+            34.07076126683663
+          ],
+          "type": "Point"
+        }
+      }
+    ]
+  }
