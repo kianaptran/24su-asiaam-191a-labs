@@ -54,6 +54,6 @@ function processData(results){
         let latitude = coordinates[1];
         let title = feature.properties.title;
         let message = feature.properties.message;
-        addMarker(latitude,longitude,title,message);
+        addMarker(latitude,longitude,title);
     });
 };
